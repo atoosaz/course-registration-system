@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: ir.ac.kntu.style.CheckStyleTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.546 s <<< FAILURE! - in ir.ac.kntu.style.CheckStyleTest
+testCheckStyleIndentation(ir.ac.kntu.style.CheckStyleTest)  Time elapsed: 0.45 s  <<< FAILURE!
+java.lang.AssertionError: 
+3 check style errors found. Starting audit...
+[ERROR] D:\Java\prj1\p1-Golestan\src\main\java\ir\ac\kntu\Main.java:8:5: Method length is 182 lines (max allowed is 50). [MethodLength]
+[ERROR] D:\Java\prj1\p1-Golestan\src\main\java\ir\ac\kntu\Main.java:132:40: Must have at least one statement. [EmptyBlock]
+[ERROR] D:\Java\prj1\p1-Golestan\src\main\java\ir\ac\kntu\Student.java:80:13: 'method def' child has incorrect indentation level 12, expected level should be 8. [Indentation]
+Audit done.
+
+	at ir.ac.kntu.style.CheckStyleTest.testCheckStyleIndentation(CheckStyleTest.java:104)
+
+testCheckStyleNaming(ir.ac.kntu.style.CheckStyleTest)  Time elapsed: 0.095 s  <<< FAILURE!
+java.lang.AssertionError: 
+3 check style errors found. Starting audit...
+[ERROR] D:\Java\prj1\p1-Golestan\src\main\java\ir\ac\kntu\CourseGroup.java:13:37: Name 'Schedule' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] D:\Java\prj1\p1-Golestan\src\main\java\ir\ac\kntu\Main.java:54:17: Name 'input_section' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\Java\prj1\p1-Golestan\src\main\java\ir\ac\kntu\Main.java:150:13: Name 'StudentOrProfessor' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+Audit done.
+
+	at ir.ac.kntu.style.CheckStyleTest.testCheckStyleNaming(CheckStyleTest.java:175)
+
